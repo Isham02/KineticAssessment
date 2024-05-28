@@ -9,17 +9,17 @@ PREREQUISITES.
 3. Ensure Cypress is installed in the local directory where the repository will be pulled. (npm install cypress)
 4. For reporting, install the mochawesome reporter  "npm i --save-dev cypress-mochawesome-reporter"
 
-Running the tests
-To Run the test, Open the terminal on the cypress folder and type the command "npx cypress run --headed --browser chrome". To run the test on Chrome browser.
+RUNNING THE TESTS
+To Run the test, Open the terminal on the root folder and type the command "npx cypress run --headed --browser chrome". To run the test on Chrome browser. 
 
-You can access the Test data on the fixtures folder. 
+You can access the Test data on the cypress>fixtures folder. 
 There are 3 .json files which you can modify.
 
 It is advised to change the email property of the userDetails.json file in Fixtures. As the test will require a unique email to complete after each run
 
-About the Framework
-The end to end automation test is covered using the Page object model where each individual page has its own element and method.
-The elements and/or methods are used on the main specfile "kineticassesment.js".
+ABOUT THE FRAMEWORK
+The end to end automation test is covered using the Page object model where each individual page has its own element (inside the cypress folder) and method.
+The elements and/or methods are used on the main specfile "kineticassesment.cy.js".
 There is only one spec file with Multiple IT blocks for each of the given cases assigned for the task.
 
 
